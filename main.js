@@ -1,8 +1,5 @@
-$.getJSON("https://github.com/VDiPaola/filmScraper/blob/main/movieData.json")
+$.getJSON("./movieData.json")
 .done(function( data ) {
-   console.log(data)
-
-
 const perPage = 10;
 const titles = Object.keys(data);
 
