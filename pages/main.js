@@ -1,4 +1,4 @@
-$.getJSON("./movieData.json")
+$.getJSON("https://github.com/VDiPaola/filmScraper/blob/main/movieData.json")
 .done(function( data ) {
    console.log(data)
 
