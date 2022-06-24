@@ -3,17 +3,26 @@ body{
     background-color: #eee; 
 }
 
-table th , table td{
-    text-align: center;
-}
-
-table tr:nth-child(even){
-    background-color: #BEF2F5
-}
-
 .pagination li:hover{
     cursor: pointer;
 }
-		table tbody tr {
-			display: none;
-		}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

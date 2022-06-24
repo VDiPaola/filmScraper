@@ -19,6 +19,7 @@ document.getElementById("searchButton").addEventListener("click", (e)=>{
         filteredTitles = titles;
     }
     //update table
+    curPage = 0;
     updateTable();
     //update pagination
     maxPages = Math.ceil(filteredTitles.length /10);
