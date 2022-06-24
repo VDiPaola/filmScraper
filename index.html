@@ -11,7 +11,7 @@
     <title>Search</title>
 </head>
 <body>
-    <div class="alert alert-dark position-absolute top-50 left-0 w-100" role="alert" id="copyAlert" style="display: none;">
+    <div class="alert alert-dark position-absolute top-50 left-0 w-100" role="alert" id="copyAlert" style="display: none;z-index: 1000;">
         Copied to clipboard!
     </div>
 
@@ -23,16 +23,15 @@
         </div>
 
 
-        <div class="w-100vw mt-3">
-            <ul class="list-group overflow-y-auto" id="table"></ul>
 
-            <nav aria-label="..." class="w-100">
-                <ul class="pagination pagination-lg justify-content-center w-100 mb-0">
-                    <li class="page-item flex-grow-1 text-center" id="prev"><a class="page-link" href="#">Prev</a></li>
-                    <li class="page-item flex-grow-1 text-center" id="next"><a class="page-link" href="#">Next</a></li>
-                </ul>
-            </nav>
-        </div>
+        <ul class="list-group overflow-y-auto flex-grow-1 justify-content-evenly" id="table"></ul>
+
+        <nav aria-label="..." class="w-100">
+            <ul class="pagination pagination-lg justify-content-center w-100 mb-0">
+                <li class="page-item flex-grow-1 text-center" id="prev"><a class="page-link" href="#">Prev</a></li>
+                <li class="page-item flex-grow-1 text-center" id="next"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
 
     </div>
     
