@@ -1,4 +1,4 @@
-$.getJSON("../movieData.json")
+$.getJSON("./movieData.json")
 .done(function( data ) {
    console.log(data)
 
