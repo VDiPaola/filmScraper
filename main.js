@@ -7,7 +7,6 @@ let maxPages = Math.ceil(titles.length /perPage);
 let filteredTitles = titles;
 let curPage = 0;
 
-const pagination = document.getElementsByClassName("pagination")[0];
 const table = document.getElementById("table");
 
 const search = document.getElementById("search");
@@ -20,10 +19,9 @@ document.getElementById("searchButton").addEventListener("click", (e)=>{
         filteredTitles = titles;
     }
     //update table
-
+    updateTable();
     //update pagination
     maxPages = Math.ceil(filteredTitles.length /10);
-    updatePagination();
 })
 
 document.getElementById("prev").addEventListener("click", (e)=>{
