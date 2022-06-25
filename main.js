@@ -35,6 +35,12 @@ document.getElementById("next").addEventListener("click", (e)=>{
     updateTable();
 })
 
+
+document.getElementById("random").addEventListener("click", (e)=>{
+    curPage = Math.floor(Math.random() * maxPages);
+    updateTable();
+})
+
 function updateTable(){
     table.innerHTML = ""
 
